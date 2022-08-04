@@ -60,6 +60,10 @@ const VoiceRSS={speech:
 
 
 
+//Disable/eneble button
+function toggleButton() {
+    button.disabled = !button.disabled;
+}
 
 //Passing joke to VoiceRss API
 function tellMe(joke){
@@ -86,9 +90,13 @@ async function getJokes() {
     } else {
         jokeText = data.joke;
     }
+    //Text-to-speach
     tellMe(jokeText);
+    //disable/enable button
+    toggleButton();
 }
 
 
 //Button plays the text
 button.addEventListener("click", getJokes);
+audio.addEventListener('ended', toggleButton);

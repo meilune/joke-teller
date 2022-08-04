@@ -90,8 +90,8 @@ body {
 
 .speech-bubble button.conversation:disabled {
   cursor: default;
-  -webkit-filter: brightness(30%);
-          filter: brightness(30%);
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
 }
 
 .speech-bubble:before,
