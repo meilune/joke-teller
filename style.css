@@ -1,8 +1,62 @@
 html {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
+  margin: 2rem;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1089ad;
+  background: radial-gradient(circle, #1089ad 3%, #1f405c 94%);
 }
+
+.lottie-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.lottie-info .bubbles {
+  margin-right: -10rem;
+}
+
+.lottie-info .octopus {
+  margin-left: -10rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: end;
+  padding: 2rem;
+  margin-right: 5rem;
+  color: #fff;
+}
+
+footer a {
+  color: #000;
+}
+
+footer a:hover {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

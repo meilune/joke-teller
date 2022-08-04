@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(16,137,173);
+background: radial-gradient(circle, rgba(16,137,173,1) 3%, rgba(31,64,92,1) 94%);
+}
+
+
+.lottie-info {
+    display: flex;
+    width: 800px;
+    display: flex;
+    align-items: flex-start;
+    .bubbles {
+        margin-right: -10rem;
+    }
+    .octopus {
+        margin-left: -10rem;
+    }
+}
+
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: end;
+    padding: 2rem;
+    margin-right: 5rem;
+    color: #fff;
+    a {
+        color: #000;
+    }
+    a:hover {
+        color:#fff;
+    }
+}
+
