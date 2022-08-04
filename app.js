@@ -83,17 +83,21 @@ function tellMe(joke){
 //Getting the jokes
 async function getJokes() {
     let jokeText = "";
-    const result = await fetch(jokeURL);
-    const data = await result.json();
-    if (data.setup) {
-        jokeText = `${data.setup} ... ${data.delivery}`;
-    } else {
-        jokeText = data.joke;
+    try {
+        const result = await fetch(jokeURL);
+        const data = await result.json();
+        if (data.setup) {
+            jokeText = `${data.setup} ... ${data.delivery}`;
+        } else {
+            jokeText = data.joke;
+        }
+        //Text-to-speach
+        tellMe(jokeText);
+        //disable/enable button
+        toggleButton();
+    } catch (error) {
+        console.log(error);
     }
-    //Text-to-speach
-    tellMe(jokeText);
-    //disable/enable button
-    toggleButton();
 }
 
 
